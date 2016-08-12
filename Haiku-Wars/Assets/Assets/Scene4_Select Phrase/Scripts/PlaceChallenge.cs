@@ -7,6 +7,14 @@ public class PlaceChallenge : MonoBehaviour {
 	public Text pleasure;
 	public Text phrase;
 
+	public string pleasureText;
+	public string phraseText;
+
+	void Awake()
+	{
+		DontDestroyOnLoad (this.gameObject);
+	}
+
 	void Start () {
 	
 	}
@@ -17,13 +25,17 @@ public class PlaceChallenge : MonoBehaviour {
 	}
 
 	public void Pleasure(string texto)
-	{
+	{		
 		pleasure.text = texto;
+		pleasureText = pleasure.text;
+		//DontDestroyOnLoad (pleasureText as GameObject);
 	}
 
 	public void Phrase(string texto)
 	{
 		phrase .text = texto;
+		phraseText = phrase.text;
+		//DontDestroyOnLoad (phraseText as GameObject);
 	}
 
 }

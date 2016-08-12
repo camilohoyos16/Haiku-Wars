@@ -7,7 +7,8 @@ public class EscogeEmperador : MonoBehaviour {
 
 	public Image [] backOfCards= new Image[4] ;
 	public List<Sprite> cardsOfEmperor = new List<Sprite>();
-
+	public Button [] buttons= new Button[4] ;
+	private OrganizeTurns organizeturns;
 	public Button goButton;
 
 	void Awake()
@@ -16,14 +17,16 @@ public class EscogeEmperador : MonoBehaviour {
 	}
 
 	void Start () {
-		
+		organizeturns  = OrganizeTurns .FindObjectOfType<OrganizeTurns>() ;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (cardsOfEmperor.Count <= 0)
-			goButton.gameObject.SetActive(true);
+		if (cardsOfEmperor.Count <= 0) {
+			//organizeturns.AdministerTurns ();
+			goButton.gameObject.SetActive (true);
+		}
 	}
 
 	public void ChooseEmperor(int numberOfCard)
@@ -38,20 +41,24 @@ public class EscogeEmperador : MonoBehaviour {
 	public void FirstCard()
 	{
 		ChooseEmperor(0);
+		buttons [0].gameObject.SetActive (false);
 	}
 
 	public void SecondCard()
 	{
 		ChooseEmperor( 1);
+		buttons [1].gameObject.SetActive (false);
 	}
 
 	public void ThirdCard()
 	{
 		ChooseEmperor( 2);
+		buttons [2].gameObject.SetActive (false);
 	}
 
 	public void FourthCard()
 	{
 		ChooseEmperor(3);
+		buttons [3].gameObject.SetActive (false);
 	}
 }

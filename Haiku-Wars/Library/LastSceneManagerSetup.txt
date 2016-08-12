@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/4_Select Phrase.unity
+- path: Assets/Scenes/5_RatePoem.unity
   isLoaded: 1
   isActive: 1
