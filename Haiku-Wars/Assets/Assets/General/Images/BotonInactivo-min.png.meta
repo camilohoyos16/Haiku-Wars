@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 434556a940ba0924aa7da2bda314cb2a
+timeCreated: 1471011917
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BotonInactivo-min_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BotonInactivo-min_0
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 265
+        width: 515
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -228.5, y: -76.5}
+        - {x: -229.5, y: -78.5}
+        - {x: -229.5, y: -89.5}
+        - {x: -223.5, y: -89.5}
+        - {x: -222.5, y: -88.5}
+        - {x: -222.5, y: -76.5}
+      - - {x: 165.5, y: -70.5}
+        - {x: 211.5, y: -66.5}
+        - {x: 238.5, y: -55.5}
+        - {x: 257.5, y: -28.5}
+        - {x: 257.5, y: 38.5}
+        - {x: 256.5, y: 40.5}
+        - {x: 249.5, y: 60.5}
+        - {x: 216.5, y: 84.5}
+        - {x: -205.5, y: 84.5}
+        - {x: -231.5, y: 71.5}
+        - {x: -251.5, y: 43.5}
+        - {x: -251.5, y: -24.5}
+        - {x: -242.5, y: -49.5}
+        - {x: -234.5, y: -61.5}
+        - {x: -196.5, y: -89.5}
+        - {x: -176.5, y: -89.5}
+        - {x: -162.5, y: -78.5}
+        - {x: 12.5, y: -66.5}
+        - {x: 15.5, y: -70.5}
+        - {x: 41.5, y: -71.5}
+      - - {x: 94.5, y: -83.5}
+        - {x: 91.5, y: -85.5}
+        - {x: 91.5, y: -89.5}
+        - {x: 100.5, y: -89.5}
+        - {x: 100.5, y: -84.5}
+        - {x: 98.5, y: -83.5}
+      - - {x: 122.5, y: -84.5}
+        - {x: 118.5, y: -87.5}
+        - {x: 119.5, y: -89.5}
+        - {x: 128.5, y: -89.5}
+        - {x: 129.5, y: -88.5}
+        - {x: 129.5, y: -86.5}
+        - {x: 127.5, y: -84.5}
+      - - {x: -220.5, y: -72.5}
+        - {x: -217.5, y: -75.5}
+        - {x: -214.5, y: -74.5}
+        - {x: -214.5, y: -72.5}
+        - {x: -217.5, y: -69.5}
+        - {x: -219.5, y: -69.5}
+      - - {x: 240.5, y: -69.5}
+        - {x: 240.5, y: -70.5}
+        - {x: 242.5, y: -72.5}
+        - {x: 243.5, y: -72.5}
+        - {x: 246.5, y: -69.5}
+        - {x: 246.5, y: -67.5}
+        - {x: 243.5, y: -66.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

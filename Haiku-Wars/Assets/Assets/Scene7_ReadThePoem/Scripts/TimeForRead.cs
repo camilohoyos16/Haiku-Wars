@@ -21,7 +21,7 @@ public class TimeForRead : MonoBehaviour {
 	{
 		timeUpdate = Time.time - time;
 		segundos = (int)(timeUpdate % 60); 
-		text.text = "- " + (reverseTime - segundos) + " -";
+		text.text = ""+ (reverseTime - segundos);
 
 		if (segundos == 30)
 			SceneManager.LoadScene ("5_RatePoem");
