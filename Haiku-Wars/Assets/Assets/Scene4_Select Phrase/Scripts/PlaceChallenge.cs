@@ -9,19 +9,32 @@ public class PlaceChallenge : MonoBehaviour {
 
 	public string pleasureText;
 	public string phraseText;
+	public static PlaceChallenge instance=null;
 
 	void Awake()
 	{
+		if (instance == null)
+			instance = this;
+		else if (instance != this)
+			Destroy(gameObject);  
+		
 		DontDestroyOnLoad (this.gameObject);
 	}
 
 	void Start () {
-	
+		/*pleasure  = GameObject.Find ("Pleasure").GetComponent<Text> (); 
+		phrase = GameObject.Find ("Phrase").GetComponent <Text> ();*/
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void FindThings()
+	{
+		pleasure  = GameObject.Find ("Pleasure").GetComponent<Text> (); 
+		phrase = GameObject.Find ("Phrase").GetComponent <Text> ();
 	}
 
 	public void Pleasure(string texto)

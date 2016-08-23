@@ -5,7 +5,7 @@ using UnityEngine .UI ;
 public class GetTextOfButtonsPhrase : MonoBehaviour {
 
 	private Text text;
-	private PlaceChallenge placeChallenge;
+//	private PlaceChallenge placeChallenge;
 	// Use this for initialization
 	void Awake()
 	{
@@ -13,7 +13,7 @@ public class GetTextOfButtonsPhrase : MonoBehaviour {
 	}
 
 	void Start () {
-		placeChallenge = PlaceChallenge.FindObjectOfType<PlaceChallenge >() ;
+		//placeChallenge = PlaceChallenge.FindObjectOfType<PlaceChallenge >() ;
 	}
 	
 	// Update is called once per frame
@@ -28,6 +28,6 @@ public class GetTextOfButtonsPhrase : MonoBehaviour {
 
 	public void SendText()
 	{
-		placeChallenge.Phrase(text.text);
+		PlaceChallenge .instance.Phrase(text.text);
 	}
 }
