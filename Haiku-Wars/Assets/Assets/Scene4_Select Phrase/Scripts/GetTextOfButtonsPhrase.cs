@@ -27,7 +27,7 @@ public class GetTextOfButtonsPhrase : MonoBehaviour {
 	}
 
 	public void SendText()
-	{
-		PlaceChallenge .instance.Phrase(text.text);
+	{	
+		ChoosePhrase .instance.Phrase(text.text);
 	}
 }

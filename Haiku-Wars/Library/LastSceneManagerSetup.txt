@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/3_Choose Emperador.unity
+- path: Assets/Scenes/6_ReadThePoem.unity
   isLoaded: 1
   isActive: 1

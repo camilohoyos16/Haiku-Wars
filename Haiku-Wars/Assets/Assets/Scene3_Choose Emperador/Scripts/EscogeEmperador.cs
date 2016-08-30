@@ -11,9 +11,14 @@ public class EscogeEmperador : MonoBehaviour {
 	private OrganizeTurns organizeturns;
 	public Button goButton;
 
+	public Text goText;
+
 	void Awake()
-	{
-		goButton.gameObject.SetActive(false);
+	{		
+		goButton.interactable =false;
+		Color colorText = goText.color;
+		colorText.a = 0.5f;
+		goText.color = colorText;
 	}
 
 	void Start () {
@@ -26,7 +31,10 @@ public class EscogeEmperador : MonoBehaviour {
 		if (cardsOfEmperor.Count <= 0) {
 			//organizeturns.AdministerTurns ();
 			organizeturns.AdministerTurns ();
-			goButton.gameObject.SetActive (true);
+			goButton.interactable =true;
+			Color colorText = goText.color;
+			colorText.a = 1f;
+			goText.color = colorText;
 		}
 	}
 
