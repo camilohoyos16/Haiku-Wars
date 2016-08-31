@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/6_ReadThePoem.unity
+- path: Assets/Scenes/2_Main Menu.unity
   isLoaded: 1
   isActive: 1

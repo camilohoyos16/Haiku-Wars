@@ -8,7 +8,6 @@ public class OkPhrase : MonoBehaviour {
 	public Text text;
 	public Button buton;
 	public Text buttonText;
-	private bool activeScene = true;
 
 	private ChoosePhrase placeChallenge;
 	private AudioSource hai;

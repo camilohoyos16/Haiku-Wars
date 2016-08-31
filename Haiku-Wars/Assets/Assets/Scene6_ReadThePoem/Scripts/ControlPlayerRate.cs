@@ -33,6 +33,12 @@ public class ControlPlayerRate : MonoBehaviour {
 
 	private void Awake ()
 	{			
+		DontDestroyOnLoad (this.gameObject);
+
+		if (!instance)
+			instance = this;
+		else
+			Destroy (this.gameObject);
 		primero = false;
 		segundo = false;
 		tercero = false;
@@ -40,7 +46,12 @@ public class ControlPlayerRate : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		EventButtonSelection.positionCount += CheckPostionPlayer;
+
+		EventButton1.positionCount += CheckPostionPlayer;
+		EventButton2.positionCount += CheckPostionPlayer;
+		EventButton3.positionCount += CheckPostionPlayer;
+
+	//	EventButtonSelection.positionCount += CheckPostionPlayer;
 		FullListOfDropdown();
 		//MakeACopy ();
 	}
@@ -58,8 +69,12 @@ public class ControlPlayerRate : MonoBehaviour {
 		copyDropdown.AddOptions (placeOfRate[0].options);		
 	}*/
 
-	void FullListOfDropdown()
+	public void FullListOfDropdown()
 	{
+		for (int i = 0; i < 3; i++) {
+			placeOfRate [i] = null;
+		}
+
 		for (int i = 0; i < 3; i++) 
 		{
 			switch (i) {
@@ -76,6 +91,17 @@ public class ControlPlayerRate : MonoBehaviour {
 				break;
 			}	
 		}
+
+		lastValue="";
+		newValue=0;
+
+		firstLastValue="";
+		SecondLastValue="";
+		thirdLastValue="";
+
+		primero = false;
+		segundo = false;
+		tercero = false;
 	}
 	
 	// Update is called once per frame
@@ -129,16 +155,13 @@ public class ControlPlayerRate : MonoBehaviour {
 		newValue = dropdownReceived.value;  //GUARDA EL NUMERO DE POSICIÓN DEL INDEX SELECCIONADO
 		Debug .Log (newValue );
 
-		Dropdown .OptionData elimina1;
-		Dropdown .OptionData elimina2;
-		Dropdown .OptionData elimina3;
-
 		if (newValue != 0) {    //SI ES SELESCCIONADO UN INDEX DIFERENTE DE 0 (OPCION NEUTRA), ELIMINA EL INDEX SELECCIONADO DE TODOS LOS DROPDOWNS
-			//for (int i = 0; i < 3; i++) {
-			//	placeOfRate [i].options.RemoveAt (newValue);
-			placeOfRate [0].options.RemoveAt (newValue );
+			for (int i = 0; i < 3; i++) {
+				placeOfRate [i].options.RemoveAt (newValue);
+			}
+		/*	placeOfRate [0].options.RemoveAt (newValue );
 			placeOfRate [1].options.RemoveAt (newValue );			 
-			placeOfRate [2].options.RemoveAt (newValue );		
+			placeOfRate [2].options.RemoveAt (newValue );	*/	
 		}
 
 		if (dropdownReceived.name.Equals ("FirstRate")) 

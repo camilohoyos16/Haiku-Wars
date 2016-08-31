@@ -19,6 +19,7 @@ namespace Cards{
 
 		void Start () {
 //			AssignButtons ();
+			TurnEveryScene .instance.FindElements ();
 		}
 		
 		// Update is called once per frame
