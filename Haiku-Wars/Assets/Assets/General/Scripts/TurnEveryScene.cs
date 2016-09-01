@@ -38,22 +38,22 @@ public class TurnEveryScene : MonoBehaviour {
 			{
 			case "RedEmperor":
 				showFace.sprite = faces [0];
-				Color color = Color.HSVToRGB (0, 225, 227,true);
+				Color color = Color.red;
 				turnoDe.color = color;
 				break;
 			case "YellowEmperor":
 				showFace.sprite = faces [1];
-				Color color1 = Color.HSVToRGB (47, 255, 243,true);
+				Color color1 = Color.yellow;
 				turnoDe.color = color1;
 				break;
 			case "BlueEmperor":
 				showFace.sprite = faces [2];
-				Color color2 = Color.HSVToRGB (225, 164, 170,true);
+				Color color2 = Color.blue;
 				turnoDe.color = color2;
 				break;
 			case "WhiteEmperor":
 				showFace.sprite = faces [3];
-				Color color3 = Color.HSVToRGB (60, 68, 256,true );
+				Color color3 = Color.white;
 				turnoDe.color = color3;
 				break;
 			default :
