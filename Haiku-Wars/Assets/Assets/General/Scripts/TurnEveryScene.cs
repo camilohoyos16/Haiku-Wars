@@ -39,21 +39,25 @@ public class TurnEveryScene : MonoBehaviour {
 			case "RedEmperor":
 				showFace.sprite = faces [0];
 				Color color = Color.red;
+				color.a = 0.7f;
 				turnoDe.color = color;
 				break;
 			case "YellowEmperor":
 				showFace.sprite = faces [1];
 				Color color1 = Color.yellow;
+				color1.a = 0.7f;
 				turnoDe.color = color1;
 				break;
 			case "BlueEmperor":
 				showFace.sprite = faces [2];
 				Color color2 = Color.blue;
+				color2.a = 0.7f;
 				turnoDe.color = color2;
 				break;
 			case "WhiteEmperor":
 				showFace.sprite = faces [3];
 				Color color3 = Color.white;
+				color3.a = 0.7f;
 				turnoDe.color = color3;
 				break;
 			default :

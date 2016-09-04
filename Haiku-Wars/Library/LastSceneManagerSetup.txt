@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/2_Main Menu.unity
+- path: Assets/Scenes/11_Winner.unity
   isLoaded: 1
   isActive: 1

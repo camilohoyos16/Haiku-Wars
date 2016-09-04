@@ -39,6 +39,13 @@ public class NewOrderOfTurns : MonoBehaviour {
 	{
 		yield return new WaitForSeconds (5f);
 		ManageTokens.Instance.endScene ();
-		SceneManager.LoadScene ("9_TurnOf");
+		if (PointsPerEmperor.Instance.bluePoints >= 6 ||
+		    PointsPerEmperor.Instance.whitePoints >= 6 ||
+		    PointsPerEmperor.Instance.redPoints >= 6 ||
+		    PointsPerEmperor.Instance.yellowPoints >= 6) {
+			SceneManager.LoadScene ("11_Winner");
+		} else {
+			SceneManager.LoadScene ("9_TurnOf");
+		}
 	}
 }

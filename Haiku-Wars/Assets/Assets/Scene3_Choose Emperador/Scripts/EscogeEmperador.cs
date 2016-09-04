@@ -13,12 +13,15 @@ public class EscogeEmperador : MonoBehaviour {
 
 	public Text goText;
 
+	private AudioSource audio;
+
 	void Awake()
 	{		
 		goButton.interactable =false;
 		Color colorText = goText.color;
 		colorText.a = 0.5f;
 		goText.color = colorText;
+		audio = GetComponent<AudioSource > ();
 	}
 
 	void Start () {
@@ -51,23 +54,27 @@ public class EscogeEmperador : MonoBehaviour {
 	{
 		ChooseEmperor(0);
 		buttons [0].gameObject.SetActive (false);
+		audio.Play();
 	}
 
 	public void SecondCard()
 	{
 		ChooseEmperor( 1);
 		buttons [1].gameObject.SetActive (false);
+		audio.Play();
 	}
 
 	public void ThirdCard()
 	{
 		ChooseEmperor( 2);
 		buttons [2].gameObject.SetActive (false);
+		audio.Play();
 	}
 
 	public void FourthCard()
 	{
 		ChooseEmperor(3);
 		buttons [3].gameObject.SetActive (false);
+		audio.Play();
 	}
 }
